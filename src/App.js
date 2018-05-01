@@ -23,6 +23,7 @@ handleClick(){
 handleClack(){
   this.setState({display:"none",active:false})
 }
+//hola
   render() {
     let style = {display: this.state.display}
     let active = {active: this.state.active}
