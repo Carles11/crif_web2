@@ -5,8 +5,10 @@ import AboutUs from './pages/AboutUs.js'
 import NavbarMenu from './pages/components/NavbarMenu.js'
 
 import './App.css';
+
 class App extends React.Component {
-constructor(){
+
+  constructor(){
     super()
     this.state = {
       display:'none',
