@@ -156,14 +156,12 @@ font-family: 'Montserrat Alternates',   sans-serif; */
   font-size: 1.5em;
   color: #696969;
 }
-
 @media only screen and (max-width:650px) {
 
   .menu_nav li {
     text-align: right;
     margin-left: 10em;
     padding: 0.3em;
-
   }
   .menu_nav ul {
     list-style: none;
@@ -176,7 +174,6 @@ font-family: 'Montserrat Alternates',   sans-serif; */
     font-weight: 50;
     font-size: 1em;
     margin: 0;
-
   }
   .poly_item_l{
     font-family: 'Montserrat', sans-serif;
