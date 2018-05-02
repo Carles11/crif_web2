@@ -2,7 +2,10 @@ import React from 'react'
 import CrossMenu from './CrossMenu'
 
 export default class NavbarMenu extends React.Component{   
- 
+    selectPage = e =>{
+        debugger
+		this.props.changePage(e.target.id)	
+	}
     render(){
         return(
             <div 
@@ -17,9 +20,15 @@ export default class NavbarMenu extends React.Component{
                     <h3 className="nav_subtitle"> WEB DEVELOPMENT </h3>
                 <nav className="menu_nav">
                 <ul>
-                    <li className='poly_item_l'>ABOUT US</li>
-                    <li className='poly_item_c'>PROJECTS</li>
-                    <li className='poly_item_r'>CONTACT</li>
+                    <li id="AboutUs"
+                        className='poly_item_l'
+                        onClick={this.selectPage.bind(this)}>ABOUT US</li>
+                    <li id="Projects"
+                        className='poly_item_c'
+                        onClick={this.selectPage.bind(this)}>PROJECTS</li>
+                    <li id="Contact"
+                        className='poly_item_r'
+                        onClick={this.selectPage.bind(this)}>CONTACT</li>
                 </ul>
                 </nav>
             </div>
