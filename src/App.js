@@ -5,11 +5,10 @@ import NavbarMenu from './pages/components/NavbarMenu.js'
 import AboutUs from './pages/AboutUs.js'
 import Projects from './pages/Projects.js'
 import Contact from './pages/Contact.js'
-
-
 import './App.css';
-class App extends React.Component {
-constructor(){
+
+export default class App extends React.Component{   
+  constructor(){
     super()
     this.state = {
       display:'none',
@@ -22,7 +21,7 @@ constructor(){
 }
 changePage(page){ 
   debugger
-  this.setState({page:"page",display:"none",active:false})   
+  this.setState({page:page,display:"none",active:false})   
 }
 handleClick(){
   this.setState({display:"block",active:true})
@@ -65,5 +64,4 @@ render() {
         </div>
     );
   }
-  }
-  export default App; 
+  }; 
